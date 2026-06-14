@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Histórias Proibidas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1531754578051159');
+fbq('track', 'PageView');
+window.addEventListener('load', function(){
+  fbq('track', 'ViewContent', {content_name:'Histórias Proibidas', value:19.90, currency:'BRL'});
+  document.querySelector('.floating-btn').addEventListener('click', function(e){
+    e.preventDefault();
+    var dest = this.href;
+    fbq('track', 'InitiateCheckout', {value:19.90, currency:'BRL'});
+    setTimeout(function(){ window.location.href = dest; }, 350);
+  });
+});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1531754578051159&ev=PageView&noscript=1"/></noscript>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#050505;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden;padding-bottom:140px;}
+.container{width:100%;max-width:480px;margin:auto;padding:20px;}
+.top-bar{width:100%;background:linear-gradient(90deg,#ff0000,#ff3b3b);text-align:center;padding:12px;font-size:14px;font-weight:700;}
+.logo{text-align:center;margin-top:18px;font-size:24px;font-weight:800;color:#ff3b3b;}
+.hero{margin-top:25px;background:#0f0f0f;border-radius:26px;overflow:hidden;border:1px solid rgba(255,255,255,.08);}
+
+/* Carrossel */
+.carousel{position:relative;width:100%;background:#111;}
+.carousel-track{display:flex;transition:transform 0.4s ease;}
+.carousel-track img{width:100%;flex-shrink:0;object-fit:cover;}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);border:none;color:#fff;font-size:22px;padding:8px 14px;cursor:pointer;border-radius:8px;z-index:10;}
+.carousel-btn.prev{left:8px;}
+.carousel-btn.next{right:8px;}
+.carousel-dots{display:flex;justify-content:center;gap:6px;padding:12px 0;}
+.dot{width:8px;height:8px;border-radius:50%;background:#444;cursor:pointer;transition:background 0.3s;}
+.dot.active{background:#ff3b3b;}
+
+.content{padding:25px;}
+.title{font-size:26px;font-weight:800;margin-bottom:16px;}
+.description{color:#b8b8b8;font-size:15px;line-height:1.7;margin-bottom:22px;}
+.highlight{color:#ff4d4d;font-weight:700;}
+.features{display:flex;flex-direction:column;gap:14px;margin-bottom:28px;}
+.feature{background:#131313;border-radius:16px;padding:16px;font-size:14px;color:#ddd;}
+.social-proof{margin-bottom:28px;background:rgba(255,0,0,.08);border-radius:16px;padding:16px;text-align:center;}
+.secure{text-align:center;margin-top:14px;color:#8d8d8d;font-size:13px;}
+.footer-text{text-align:center;color:#6d6d6d;font-size:12px;margin-top:25px;}
+
+.floating-btn{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);width:90%;max-width:420px;background:linear-gradient(180deg,#ff2d2d,#c90000);color:#fff;padding:18px;border-radius:18px;font-size:18px;font-weight:800;text-align:center;text-decoration:none;box-shadow:0 0 35px rgba(255,0,0,.45);z-index:999999;cursor:pointer;display:block;animation:pulse 1.5s infinite;will-change:transform;}
+@keyframes pulse{0%{transform:translateX(-50%) scale(1);}50%{transform:translateX(-50%) scale(1.03);}100%{transform:translateX(-50%) scale(1);}}
+</style>
+</head>
+<body>
+
+<div class="top-bar">🔥 OFERTA ESPECIAL HOJE — R$19,90</div>
+
+<div class="container">
+<div class="logo">Histórias Proibidas</div>
+
+<div class="hero">
+  <div class="carousel">
+    <div class="carousel-track" id="track">
+      <img src="https://raw.githubusercontent.com/projetoparaleloivan-lab/quadrinhos/main/page01.jpg" alt="page 1"/>
+      <img src="https://raw.githubusercontent.com/projetoparaleloivan-lab/quadrinhos/main/page02.jpg" alt="page 2"/>
+      <img src="https://raw.githubusercontent.com/projetoparaleloivan-lab/quadrinhos/main/page03.jpg" alt="page 3"/>
+      <img src="https://raw.githubusercontent.com/projetoparaleloivan-lab/quadrinhos/main/page04.jpg" alt="page 4"/>
+      <img src="https://raw.githubusercontent.com/projetoparaleloivan-lab/quadrinhos/main/page05.jpg" alt="page 5"/>
+      <img src="https://raw.githubusercontent.com/projetoparaleloivan-lab/quadrinhos/main/page06.jpg" alt="page 6"/>
+    </div>
+    <button class="carousel-btn prev" onclick="slide(-1)">&#8249;</button>
+    <button class="carousel-btn next" onclick="slide(1)">&#8250;</button>
+  </div>
+  <div class="carousel-dots" id="dots"></div>
+
+  <div class="content">
+    <div class="title">Desbloqueie agora o acesso completo</div>
+    <div class="description">
+      Flavinha está de volta com uma história que ninguém esperava...<br><br>
+      O acesso completo está disponível apenas para membros do grupo exclusivo.<br><br>
+      <span class="highlight">Material disponível apenas para membros.</span>
+    </div>
+
+    <div class="features">
+      <div class="feature">✅ Acesso imediato após pagamento</div>
+      <div class="feature">✅ Grupo exclusivo reservado para membros</div>
+      <div class="feature">✅ Conteúdo exclusivo para membros</div>
+      <div class="feature">✅ Não disponível publicamente</div>
+    </div>
+
+    <div class="social-proof">🔥 Centenas de pessoas já desbloquearam essa história</div>
+    <div class="secure">Pagamento via PIX • acesso imediato • grupo exclusivo</div>
+    <div class="footer-text">Acesso disponível apenas para maiores de 18 anos.</div>
+  </div>
+</div>
+</div>
+
+<a href="https://app.pushinpay.com.br/service/pay/A1F7E88C-7F28-4567-A845-C901B446E684" class="floating-btn">
+  🔓 GARANTIR ACESSO — R$19,90
+  <div style="font-size:13px;font-weight:400;margin-top:4px;opacity:0.85;">PIX • Acesso imediato</div>
+</a>
+
+<script>
+const total = 6;
+let current = 0;
+const track = document.getElementById("track");
+const dotsContainer = document.getElementById("dots");
+for(let i=0;i<total;i++){
+  const d = document.createElement("div");
+  d.className = "dot"+(i===0?" active":"");
+  d.onclick = ()=>goTo(i);
+  dotsContainer.appendChild(d);
+}
+function goTo(n){
+  current=n;
+  track.style.transform=`translateX(-${current*100}%)`;
+  document.querySelectorAll(".dot").forEach((d,i)=>d.classList.toggle("active",i===current));
+}
+function slide(dir){ goTo((current+dir+total)%total); }
+
+</script>
+</body>
+</html>
+
